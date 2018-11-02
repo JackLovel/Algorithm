@@ -1,6 +1,6 @@
-typedef struct node* link;
+typedef struct node *link;
 
 struct node {
-  Item item;
+  int item;
   link next;
 };
