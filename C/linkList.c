@@ -2,5 +2,5 @@ typedef struct node *link;
 
 struct node {
   int item;
-  link next;
+  link next;   // struct node *next
 };
