@@ -1,6 +1,11 @@
 using System;
 using System.Collections;
 
+/// <summary>
+///  subject: some collection example (such Queue, Stack, LinkList)
+///  data： 2018/12/25
+///  source: copy from MSDN 
+/// </summary>
 namespace Algorithm
 {
     class Program
