@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace Algorithm
@@ -76,12 +77,13 @@ namespace Algorithm
 
         static void Main(string[] args)
         {
-            string s = "(1 + ((2 + 3) * (4 * 5)))";
-            double result = Evaluate(s);
+            string expr  = "(1 + ((2 + 3) * (4 * 5)))";
+            Console.WriteLine("{0} = {1}", expr, Evaluate(expr));
 
-            Console.WriteLine("{0} = {1}", s, result);
+            string expr2 = "(1+2)";
+            Console.WriteLine("{0} = {1}", expr2, Evaluate(expr2));
+
             Console.ReadKey();
         }   
     }
 }
-
