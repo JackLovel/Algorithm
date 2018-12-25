@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 
-namespace 算法
+namespace Algorithm
 {
     class Program
     {
