@@ -83,10 +83,10 @@ namespace Algorithm
         static void Main(string[] args)
         {
             string expr  = "(1 + ((2 + 3) * (4 * 5)))";
-            Console.WriteLine("{0} = {1}", expr, Evaluate(expr));
+            Console.WriteLine("{0} = {1}", expr, Evaluate(expr));   // output: (1 + ((2 + 3) * (4 * 5))) = 101
 
             string expr2 = "(1+2)";
-            Console.WriteLine("{0} = {1}", expr2, Evaluate(expr2));
+            Console.WriteLine("{0} = {1}", expr2, Evaluate(expr2)); // output: (1+2) = 3
 
             Console.ReadKey();
         }   
