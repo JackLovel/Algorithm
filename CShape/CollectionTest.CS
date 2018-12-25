@@ -7,8 +7,7 @@ namespace Algorithm
     {
         static void Main(string[] args)
         {
-            
-            // Queue  
+            // Queue: FIFO 
             Queue myQ = new Queue();
 
             myQ.Enqueue("Hello");
@@ -21,8 +20,16 @@ namespace Algorithm
 
             PrintValues(myQ);
 
-            // stack
-            
+            // stack: LIFO
+            Stack myStack = new Stack();
+            myStack.Push("Hello");
+            myStack.Push("Word");
+            myStack.Push("!");
+
+            Console.WriteLine("myStack");
+            Console.WriteLine("\tCount: {0}", myStack.Count);
+            Console.Write("\tValue:");
+            PrintValues(myStack);
             
             Console.ReadKey();
         }
