@@ -41,7 +41,6 @@ namespace Algorithm
             if (rank(value, whitelist) < 0)
             {
                 Console.WriteLine("{0} 这个值不存在", value);
-
             }
             else
             {
