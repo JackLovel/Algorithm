@@ -1,9 +1,9 @@
 package Aglo4;
 
 import edu.princeton.cs.algs4.StdOut;
-
 import java.util.Comparator;
 
+// code copy from Algorithms Fourth Edition's code 
 public class Insertion {
     // This class should not be instantiated.
     private Insertion() { }
