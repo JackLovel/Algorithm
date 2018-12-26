@@ -1,8 +1,7 @@
 package Aglo4;
 
-import edu.princeton.cs.algs4.StdOut;
-import edu.princeton.cs.algs4.StdRandom;
-import edu.princeton.cs.algs4.ThreeSum;
+// Caluate a program run need time 
+import edu.princeton.cs.algs4.*;
 
 public class Stopwatch {
     private final long start;
@@ -12,8 +11,8 @@ public class Stopwatch {
     }
 
     public double elapsedTime(){
-        long now = System.currentTimeMillis(); // ????
-        return (now - start) / 1000.0;         // ??????
+        long now = System.currentTimeMillis(); // 毫秒
+        return (now - start) / 1000.0;         // 转化为秒
     }
 
     private static void main(String[] args){
@@ -23,7 +22,7 @@ public class Stopwatch {
             a[i] = StdRandom.uniform(-1000000, 1000000);
         Stopwatch timer = new Stopwatch();
         int cnt = ThreeSum.count(a);
-        double time = timer.elapsedTime();     // ?????????
+        double time = timer.elapsedTime();     // 所需要时间
         StdOut.println(cnt + " tripes " + time + " seconds " );
     }
 }
