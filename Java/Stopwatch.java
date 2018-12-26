@@ -11,8 +11,8 @@ public class Stopwatch {
     }
 
     public double elapsedTime(){
-        long now = System.currentTimeMillis(); // 毫秒
-        return (now - start) / 1000.0;         // 转化为秒
+        long now = System.currentTimeMillis(); // result is milisecond
+        return (now - start) / 1000.0;         // translate second 
     }
 
     private static void main(String[] args){
@@ -22,7 +22,7 @@ public class Stopwatch {
             a[i] = StdRandom.uniform(-1000000, 1000000);
         Stopwatch timer = new Stopwatch();
         int cnt = ThreeSum.count(a);
-        double time = timer.elapsedTime();     // 所需要时间
+        double time = timer.elapsedTime();     // spend time 
         StdOut.println(cnt + " tripes " + time + " seconds " );
     }
 }
