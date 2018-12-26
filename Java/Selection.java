@@ -3,7 +3,7 @@ package Aglo4;
 import edu.princeton.cs.algs4.*;
 import java.util.Comparator;
 
-// code copy from algs4
+// code copy from Algorithms Fourth Edition's code 
 public class Selection {
 
     private Selection() { }
