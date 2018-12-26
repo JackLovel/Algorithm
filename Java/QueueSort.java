@@ -1,18 +1,18 @@
-package Aglo4;
-
 import edu.princeton.cs.algs4.*;
 
 // copy from edu_princeton_cs_algs4
 public class Quick {
 
+    private Quick() { }
+    
     public static void sort(Comparable[] a){
-        StdRandom.shuffle(a);
+        StdRandom.shuffle(a);   // disorder sequence
         sort(a, 0, a.length - 1);
     }
 
     private static void sort(Comparable[] a, int lo, int hi){
         if(hi <= lo) return;
-        int j = parition(a, lo, hi);   // 切分
+        int j = parition(a, lo, hi);   // get mid value
         sort(a, lo, j - 1);
         sort(a, j + 1, hi);
     }
